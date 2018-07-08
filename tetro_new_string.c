@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "fillit.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 int		*max(int **arr)
 {
@@ -81,7 +81,7 @@ char *tetro_new_string(int **arr)
 	s[i] = '\0';
 	return (s);
 }
-
+/*
 int	main()
 {
 	int **arr = (int **)malloc(4 * sizeof(int *));
@@ -104,3 +104,4 @@ int	main()
 	printf("%s\n", tetro_new_string(arr));
 	return (0);
 }
+*/
