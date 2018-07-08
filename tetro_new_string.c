@@ -38,8 +38,8 @@ char	counter(int **arr, int i, int p)
 
 	if (max(arr)[1] != 0)
 	{
-		y = i / (max(arr)[1] + 1);
-		x = i % (max(arr)[1] + 1);
+		y = i / (max(arr)[0] + 2);
+		x = i % (max(arr)[0] + 2);
 	}
 	else
 	{
@@ -94,12 +94,12 @@ int	main()
 
 	arr[0][0] = 1;
 	arr[0][1] = 0;
-	arr[1][0] = 0;
-	arr[1][1] = 1;
-	arr[2][0] = 1;
+	arr[1][0] = 2;
+	arr[1][1] = 0;
+	arr[2][0] = 0;
 	arr[2][1] = 1;
 	arr[3][0] = 1;
-	arr[3][1] = 2;
+	arr[3][1] = 1;
 
 	printf("%s\n", tetro_new_string(arr));
 	return (0);
